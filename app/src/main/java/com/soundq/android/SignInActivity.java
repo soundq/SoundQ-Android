@@ -15,24 +15,6 @@ import android.widget.Toast;
 public class SignInActivity extends AppCompatActivity {
 
     /**
-     * Project 'client_id' API key for SoundCloud
-     */
-    private static final String CLIENT_ID = "e8a34f692645d235db9c5501f29e052f";
-
-    /**
-     * Callback path from SoundCloud connect to Android
-     */
-    private static final String REDIRECT_URI = new Uri.Builder().scheme("soundq")
-            .authority("soundcloud")
-            .appendPath("callback")
-            .build().toString();
-
-    /**
-     * Response type from SoundCloud connect
-     */
-    private static final String RESPONSE_TYPE = "token";
-
-    /**
      * Display type for SoundCloud connect window
      */
     private static final String DISPLAY = "popup";
@@ -50,9 +32,9 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = "https://www.soundcloud.com/connect?" +
-                        "client_id=" + CLIENT_ID +
-                        "&redirect_uri=" + REDIRECT_URI +
-                        "&response_type=" + RESPONSE_TYPE +
+                        "client_id=" + SoundCloudAPI.CLIENT_ID +
+                        "&redirect_uri=" + SoundCloudAPI.REDIRECT_URI +
+                        "&response_type=" + SoundCloudAPI.RESPONSE_TYPE +
                         "&display=" + DISPLAY;
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
