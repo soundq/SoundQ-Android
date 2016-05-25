@@ -25,11 +25,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="soundq"
+                <data
                     android:host="soundcloud"
-                    android:pathPrefix="/callback" />
+                    android:pathPrefix="/callback"
+                    android:scheme="soundq" />
             </intent-filter>
         </activity>
+        <activity android:name=".SongPlayerActivity"></activity>
     </application>
 
 </manifest>
