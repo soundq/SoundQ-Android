@@ -11,7 +11,7 @@
                 tools:context=".SignInActivity" >
 
     <ImageView
-        android:layout_width="242dp"
+        android:layout_width="124dp"
         android:layout_height="29dp"
         android:id="@+id/image_connect"
         android:background="@drawable/btn_sc_connect"
