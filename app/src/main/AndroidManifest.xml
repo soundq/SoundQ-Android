@@ -30,7 +30,7 @@
                     android:pathPrefix="/callback"
                     android:scheme="soundq" />
             </intent-filter>
-        </activity>g
+        </activity>
     </application>
 
 </manifest>
