@@ -54,7 +54,9 @@ public class SignInActivity extends AppCompatActivity {
             Toast.makeText(this,"Login Failed",Toast.LENGTH_LONG).show();
         } else {
             String token = uri.getFragment().substring(uri.getFragment().indexOf("&"));
-            // use token ...
+            Intent newIntent = new Intent(SignInActivity.this,SongPlayerActivity.class);
+            newIntent.putExtra(IntentExtras.TOKEN,token);
+            SignInActivity.this.startActivity(newIntent);
         }
     }
 
