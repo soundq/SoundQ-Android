@@ -10,12 +10,13 @@
     android:background="@drawable/background"
                 tools:context=".SignInActivity" >
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:id="@+id/button_signin"
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="29dp"
+        android:id="@+id/image_connect"
+        android:background="@drawable/btn_sc_connect"
+        android:scaleType="fitCenter"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

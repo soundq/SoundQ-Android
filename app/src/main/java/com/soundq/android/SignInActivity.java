@@ -5,8 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -26,11 +25,8 @@ public class SignInActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_signin);
 
-        // TODO splash screen (+ fade out?)
-
-        // TODO use SoundCloud button
-        Button signin = (Button) this.findViewById(R.id.button_signin);
-        signin.setOnClickListener(new View.OnClickListener() {
+        ImageView connect = (ImageView) this.findViewById(R.id.image_connect);
+        connect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://www.soundcloud.com/connect?" +
